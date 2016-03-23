@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/magic_square"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/small_magic_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/magic_square_selector"
+                android:minHeight="45dp"
+                android:minWidth="150dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:text="@string/small_magic"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/big_magic_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/magic_square_selector"
+                android:minHeight="45dp"
+                android:minWidth="150dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:text="@string/big_magic"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.60"
+        android:orientation="vertical">
+
+
+        <GridView
+            android:id="@+id/gv_magic_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="30dp">
+
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>
